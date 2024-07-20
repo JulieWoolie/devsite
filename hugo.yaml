@@ -1,0 +1,41 @@
+title: "Arcadius Docs"
+theme: arc-tail
+baseURL: 'https://example.org/'
+languageCode: 'en-us'
+
+params:
+  moto: ""
+  description: "ArcadiusMC developer and admin documentation."
+
+menu:
+  main:
+    - identifier: 'posts'
+      url: '/posts/'
+      name: "Posts"
+      weight: 10
+    - identifier: 'grenadier'
+      url: '/grenadier/'
+      name: 'Grenadier'
+      weight: 30
+    - identifier: 'nbt'
+      url: '/grenadier/'
+      name: 'NBT'
+      weight: 40
+    - identifier: 'menus'
+      url: '/menus/'
+      name: 'Delphi'
+      weight: 20
+  homepage:
+    - identifier: 'grenadier'
+      url: '/grenadier/'
+      name: 'Grenadier: Paper Command Library'
+      weight: 20
+    - identifier: 'nbt'
+      url: '/nbt/'
+      name: 'NBT: Named Binary Tag API'
+      weight: 30
+    - identifier: 'menus'
+      url: '/menus/'
+      name: 'Delphi: Menu plugin'
+      weight: 10
+  footer: []

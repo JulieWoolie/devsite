@@ -1,0 +1,3 @@
+[submodule "themes/arc-tail"]
+	path = themes/arc-tail
+	url = https://github.com/ArcadiusMC/tail-arc.git
