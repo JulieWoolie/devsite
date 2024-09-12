@@ -22,8 +22,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
 
-      - name: Install PostCSS
-        run: npm install postcss-cli
+      - name: Install PostCSS and plugins
+        run: |
+          npm install postcss-cli
+          npm install autoprefixer
+          npm install postcss
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
