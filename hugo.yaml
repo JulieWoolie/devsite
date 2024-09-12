@@ -1,41 +1,31 @@
 title: "Arcadius Docs"
-theme: arc-tail
-baseURL: 'https://example.org/'
-languageCode: 'en-us'
+languageCode: "en-us"
 
 params:
-  moto: ""
-  description: "ArcadiusMC developer and admin documentation."
+  ui:
+    showLightDarkModeMenu: true
+    navbar_logo: false
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 
 menu:
   main:
-    - identifier: 'posts'
-      url: '/posts/'
-      name: "Posts"
-      weight: 10
-    - identifier: 'grenadier'
-      url: '/grenadier/'
-      name: 'Grenadier'
-      weight: 30
-    - identifier: 'nbt'
-      url: '/grenadier/'
-      name: 'NBT'
-      weight: 40
-    - identifier: 'menus'
-      url: '/menus/'
-      name: 'Delphi'
-      weight: 20
-  homepage:
-    - identifier: 'grenadier'
-      url: '/grenadier/'
-      name: 'Grenadier: Paper Command Library'
-      weight: 20
-    - identifier: 'nbt'
-      url: '/nbt/'
-      name: 'NBT: Named Binary Tag API'
-      weight: 30
-    - identifier: 'menus'
-      url: '/menus/'
-      name: 'Delphi: Menu plugin'
-      weight: 10
-  footer: []
+    - name: Delphi Menus
+      url: /menus/
+    - name: Grenadier Commands
+      url: /grenadier/
+    - name: NBT
+      url: /nbt/
+    #- name: Hephaestus JS
+    #  url: /scripts/
+
+module:
+  hugoVersion:
+    extended: true
+    min: 0.110.0
+  imports:
+    - path: github.com/google/docsy
+      disable: false

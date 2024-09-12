@@ -1,6 +1,6 @@
 ---
 title: "Argument Types"
-type: widewiki
+type: docs
 toc: true
 ---
 

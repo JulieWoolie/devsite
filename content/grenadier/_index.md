@@ -1,6 +1,6 @@
 ---
 title: "Grenadier"
-type: widewiki
+type: docs
 toc: true
 ---
 
