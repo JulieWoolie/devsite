@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Functions on Arcadius Docs</title><link>/menus/scss/functions/</link><description>Recent content in Functions on Arcadius Docs</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/menus/scss/functions/index.xml" rel="self" type="application/rss+xml"/><item><title>clamp(min, value, max)</title><link>/menus/scss/functions/clamp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/menus/scss/functions/clamp/</guid><description>@function clamp($min, $value, $max) Parameters min
+Lower (most negative) bound. value
+Preferred value. max
+Upper (most positive) bound. Returns Either the min, value, or max parameter.
+min is returned if value is less than min.
+max is returned if value is greater than max.
+val is returned if value is greater than min and less than max.
+Examples @debug clamp(1 10 100); // =&amp;gt; 10 @debug clamp(1 -2 100); // =&amp;gt; 1 @debug clamp(1 1000 100); // =&amp;gt; 100 @debug clamp(2px 14px 30px); // =&amp;gt; 14px See also min(a, b) max(a, b)</description></item><item><title>cos(x)</title><link>/menus/scss/functions/cos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/menus/scss/functions/cos/</guid><description>@function cos($angle) Parameters angle
+An angle, or any number. If the input has no unit, then it&amp;rsquo;s treated as radians. Returns The cosine of the angle angle, between -1 and 1, unless the angle is infinity or -infinity, in which case, NaN is returned.</description></item><item><title>hsl(hue, saturation, lightness)</title><link>/menus/scss/functions/hsl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/menus/scss/functions/hsl/</guid><description>@function hsl($hue, $saturation, $lightness, $alpha: 1.0) Parameters hue
+Hue color component. Can be defined as plain number (treated the same as degrees) or as a number with an angle measurement (deg, rad, grad, turn). saturation
+Saturation color component. Can either be a 0.0 to 1.0 value, or a 0% to 100% value. lightness
+Lightness color component. Can either be a 0.0 to 1.0 value, or a 0% to 100% value. alpha (Optional)</description></item><item><title>lighten(color)</title><link>/menus/scss/functions/lighten/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/menus/scss/functions/lighten/</guid><description>@function lighten($color, $amount: 25%) Adds the specified amount to each of the specified color&amp;rsquo;s channels. If amount is not specified, it defaults to 25%.
+Parameters color
+Color input value, must be a valid color. amount (Optional)
+Amount to lighten the color. If not specified, defaults to 25%. Return value Modified color
+Examples @debug lighten(darkgreen); // =&amp;gt; #007d00 @debug lighten(white); // =&amp;gt; white</description></item><item><title>max(a, b)</title><link>/menus/scss/functions/max/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/menus/scss/functions/max/</guid><description>@function max($a, $b) Parameters a
+The first value b
+The second value Returns Either the a or b. a is returned if it is greater than b, otherwise b is returned.
+Examples See also clamp(min, value, max) min(a, b)</description></item><item><title>min(a, b)</title><link>/menus/scss/functions/min/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/menus/scss/functions/min/</guid><description>@function min($a, $b) Parameters a
+The first value b
+The second value Returns Either the a or b. a is returned if it is less than b, otherwise b is returned.
+See also clamp(min, value, max) max(a, b)</description></item><item><title>rgb(red, green, blue)</title><link>/menus/scss/functions/rgb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/menus/scss/functions/rgb/</guid><description>@function rgb($red, $green, $blue, $alpha: 1.0) Creates a color value out of the specified red, green and blue components. Any of the RGB components can be specified either as a percentage from 0 to 100 or as a plain number from 0 to 255.
+Parameters red
+Red color component green
+Green color component blue
+Blue color component alpha (Optional)
+Alpha color component. This parameter is optional, if it&amp;rsquo;s omitted, a value of 1.</description></item><item><title>sin(x)</title><link>/menus/scss/functions/sin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/menus/scss/functions/sin/</guid><description>@function sin($angle) Parameters angle
+An angle, or any number. If the input has no unit, then it&amp;rsquo;s treated as radians. Returns The sine of the angle angle, between -1 and 1, unless the angle is infinity or -infinity, in which case, NaN is returned.</description></item><item><title>tan(x)</title><link>/menus/scss/functions/tan/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/menus/scss/functions/tan/</guid><description>@function tan($angle) Parameters angle
+An angle, or any number. If the input has no unit, then it&amp;rsquo;s treated as radians. Returns The tangent of the angle angle.
+If the angle is infinity or -infinity, NaN is returned. If the angle is -0, -0 is returned.</description></item></channel></rss>
