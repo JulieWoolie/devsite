@@ -1,0 +1,14 @@
+{{$assetLink := .Get "href"}}
+{{$filename := .Get "filename"}}
+
+{{$res := resources.Get $assetLink}}
+{{$memsize := (len $res.Content)}}
+{{$displaySize := (div (cast.ToFloat $memsize) 1048576)}}
+
+<a class="download-btn" href="{{$assetLink}}" download>
+  <img src="/icons/download-icon.png" alt="Download icon">
+  <div>
+    <b>{{$filename}}</b>
+    <div>{{printf "%.2f" $displaySize}}mb</div>
+  </div>
+</a>

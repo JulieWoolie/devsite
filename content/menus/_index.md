@@ -9,16 +9,19 @@ in XML, SCSS and Java/Javascript and displayed with Display entities to players.
 
 ## Features
 - Highly customizable floating menus
-- Extensive Java and Javascript APIs
+- Extensive Java API
 - (partial) SCSS support 
 - XML loaded menus
-- Support for tooltips, drop downs
+- Support for tooltips
+
+## Download
+{{<download href="/downloads/delphi-papermc-1.21-1.0.0-all.jar" filename="delphi-papermc-1.21-1.0.0-all.jar">}}
 
 ## Maven and gradle dependencies
 ### Gradle
 ```kotlin
 repositories {
-  mavenCentral()
+  maven("https://libraries.arcadiusmc.net")
 }
 
 dependencies {
@@ -27,6 +30,14 @@ dependencies {
 ```
 ### Maven
 ```xml
+<repositories>
+  <repository>
+    <id>ArcadiusRepo</id>
+    <name>ArcadiusRepo</name>
+    <url>https://libraries.arcadiusmc.net</url>
+  </repository>
+</repositories>
+
 <dependencies>
   <dependency>
     <groupId>net.arcadiusmc</groupId>

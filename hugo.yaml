@@ -1,6 +1,8 @@
 title: "Arcadius Docs"
 languageCode: "en-us"
 
+assetDir: "static"
+
 params:
   ui:
     showLightDarkModeMenu: true

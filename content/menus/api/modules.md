@@ -53,11 +53,12 @@ disabled.
 Modules can be created out of plugin jar resources, let's assume we have the 
 following resources in our plugin's jar:
 ```txt
-/config.yml
-/paper-plugin.yml
-/page-data 
-|-/index.xml
-|-/style.scss
+/resources/
+├─/config.yml
+├─/paper-plugin.yml
+└─/page-data 
+  ├─/index.xml
+  └─/style.scss
 ```
 and we want the `/page-data` directory to be a module that pages can be loaded
 from, we can do like this:
@@ -177,7 +178,9 @@ import net.arcadiusmc.dom.*;
 import net.arcadiusmc.dom.event.*;
 
 public class ClickerPage {
+  // This is the entry point called by the Document
   public static void onDomInitialized(Document document) {
+    // Wait for the document to be fully loaded
     document.addEventListener(EventTypes.DOM_LOADED, ClickerPage::onDomLoaded)
   }
 
@@ -225,4 +228,41 @@ public class ExamplePlugin extends JavaPlugin {
     delphi.getResources().registerModule("clicker-page", module);
   }
 }
+```
+
+## Opening pages with the API
+Pages can be opened for players with the following code:
+```java
+String pagePath = "example-module:index.xml?param=false";
+Player player = // ...
+
+Delphi delphi = DelphiProvider.get();
+
+delphi.newRequest()
+    .setPath(pagePath)
+    .setPlayer(player)
+    .openOrLog();
+```
+
+The `openOrLog` returns an `Optional<DocumentView>` if you need to do anything 
+with the view.  
+If instead you want full control over the result and errors, you can use 
+`open()` which returns a `Result<DocumentView, DelphiException>`, or you can use
+`openOrThrow()` which will throw the `DelphiException` instead of logging or
+returning it.
+  
+By default, the spawned document will be spawned directly infront of the player,
+facing the player. If you want to spawn the document at a specific position.
+```java
+String pagePath = "example-module:index.xml?param=false";
+Player player = // ...
+Location location = new Location(player.getWorld(), 100, 100, 100, 0, 0);
+
+Delphi delphi = DelphiProvider.get();
+
+delphi.newRequest()
+    .setPath(pagePath)
+    .setPlayer(player)
+    .setSpawnLocation(location)
+    .openOrLog();
 ```

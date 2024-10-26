@@ -1,0 +1,21 @@
+:root {
+  &[data-bs-theme="dark"] {
+    --download-inv: 1;
+  }
+
+  --download-inv: 0;
+}
+
+.download-btn {
+  display: flex;
+  border: 2px solid var(--bs-border-color);
+  border-radius: 0.2cm;
+  max-width: 50%;
+  padding: 1em;
+
+  img {
+    filter: unquote("invert(var(--download-inv))");
+    width: 50px;
+    margin-right: 1em;
+  }
+}

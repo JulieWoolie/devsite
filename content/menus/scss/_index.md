@@ -16,3 +16,24 @@ SCSS allows you to style and change how the elements of a menu page look like.
   `$<variable name>: <value>;`
 - Despite SCSS being used a lot of SCSS features are not supported, such as 
   functions, `@import` and `@use`, to name a few
+
+## Compatibility table
+| Feature | Supported? |
+|--|--|
+|`@for` | No |
+|`@if` | Yes |
+|`@each` | No |
+|`@function` | No |
+|`@return` | No |
+|`@continue` | No |
+|`@break` | No |
+| String interpolation | No |
+| Lists | Yes |
+| Maps | No |
+| `@use "scss:list";` | No |
+| `@use "scss:math";` | No |
+| `@use "scss:color";` | No |
+| `@use "scss:map";` | No |
+| `<`, `<=`, `>=`, `>`, `==`, `!=` Operators | Yes |
+| `+`, `-`, `*`, `/`, `%` Operators | Yes |
+| `and`, `or`, `not` Operators | Yes |
