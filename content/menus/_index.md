@@ -7,6 +7,9 @@ weight: 1
 **Delphi** is a display entity menu plugin, which allows for menus to be written
 in XML, SCSS and Java/Javascript and displayed with Display entities to players.
 
+If you're interested in the development of this plugin, checkout my site: 
+[juliewoolie.com/delphi](https://juliewoolie.com/delphi)
+
 ## Features
 - Highly customizable floating menus
 - Extensive Java API
@@ -15,7 +18,7 @@ in XML, SCSS and Java/Javascript and displayed with Display entities to players.
 - Support for tooltips
 
 ## Download
-{{<download href="/downloads/delphi-papermc-1.21-1.0.0-all.jar" filename="delphi-papermc-1.21-1.0.0-all.jar">}}
+{{<download href="/downloads/delphi-papermc-1.21.4-1.0.0-all.jar" filename="delphi-papermc-1.21.4-1.0.0-all.jar">}}
 
 ## Maven and gradle dependencies
 ### Gradle

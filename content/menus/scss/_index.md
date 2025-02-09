@@ -3,7 +3,7 @@ title: "SCSS"
 type: docs
 toc: true
 description: "Document Styling and layout"
-weight: 90
+weight: 100
 ---
 
 SCSS allows you to style and change how the elements of a menu page look like.

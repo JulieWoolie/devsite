@@ -5,12 +5,15 @@ description: "Allows an item to be rendered in the menu"
 ---
 
 Displays an item on the menu. This element cannot have child elements.
+  
+The displayed item can be set with either the `src` attribute or by writing the
+item data JSON inside the element.
 
 ## Attributes
 | Attribute | Value | Description | Example |
 |--|--|--|--|
 | `src` | *path* | A [Resource Path](../../paths) to the item's data. | `src="item.json"` |
-| `hide-item-tooltip` | *boolean* | Whether to show the item's tooltip or<br>not when the element is hovered over.<br>`false` by default | `hide-item-tooltip="true"` |
+| `hide-item-tooltip` | *boolean* | Whether to show the item's tooltip or<br>not when the element is hovered over.<br>`true` by default | `hide-item-tooltip="true"` |
 | `advanced-item-tooltips` | *boolean* | Whether to show the item tooltip<br>as if debug tooltips were enabled or not.<br>`false` by default | `advanced-item-tooltips="true"` |
 
 ### Source Attribute
@@ -45,8 +48,9 @@ Example *`index.xml`*:
 ### Item element styling
 ```scss
 item {
-  scale: 0.5;
   display: inline;
+  width: 25cm;
+  height: 25cm;
 }
 ```
 ### Tooltip styling
@@ -56,21 +60,24 @@ style of the tooltip container element.
 
 ```scss
 item-tooltip-name {
-  margin-bottom: 1px;
+  margin-bottom: 0.5px;
   display: block;
 }
 
 item-tooltip {
-  scale: 0.5;
   z-index: 10;
   display: block;
 
-  padding: 1px;
+  padding: 0.25px;
   background-color: #170817;
-  border: 1px;
+  border: 0.25px;
   border-color: #270558;
-  outline: 1px;
+  outline: 0.25px;
   outline-color: #170817;
+
+  * {
+    font-size: 50%;
+  }
 }
 ```
 
@@ -83,4 +90,9 @@ item-tooltip {
 ```
 ```xml
 <item src="item.json" hide-item-tooltip="false" advanced-item-tooltips="true"/>
+```
+```xml
+<item>
+  {id: 'minecraft:stone'}
+</item>
 ```

@@ -2,14 +2,14 @@
 title: Events
 type: docs
 description: "Events allow you to listen to changes in the DOM and page with event handlers."
-weight: 40
+weight: 95
 ---
 
 ## Event Types
 | Event Type | Triggers | Type |
 |--|--|--|
 | `mouse-enter` | Player's cursor enters an element | MouseEvent |
-| `mouse-exit` | Player's cursor exists an element | MouseEvent |
+| `mouse-exit` | Player's cursor exits an element | MouseEvent |
 | `mouse-move` | Player's cursor moves inside of an element | MouseEvent |
 | `click` | Player clicks on an element | MouseEvent |
 | `click-expire` | 3 Ticks after a `mouse-down` event. Can be considered a `mouse-up` event. | MouseEvent |

@@ -2,7 +2,7 @@
 title: Commands
 type: docs
 description: "Info regarding the `/delphi` command used to interact with and spawn pages."
-weight: 1
+weight: 5
 ---
 The `/delphi` command can be used in `.mcfunction` files inside of data packs 
 and can be used with `/execute` commands.
@@ -19,8 +19,13 @@ and can be used with `/execute` commands.
 ## `/delphi open`
 | | |
 |--|--|
-| Arguments  | `/delphi open <players> <page path>` |
 | Permission | `delphi.commands` |
+
+#### Full list of arguments
+- `/delphi open <player> <page path>`
+- `/delphi open <player> <page path> [instance name]`
+- `/delphi open <players>|all-players <page path> <x y z> [instance name]`
+- `/delphi open <players>|all-players <page path> <x y z> <yaw> <pitch> [instance name]`
 
 #### Description  
 Opens a page for a player or players.  
@@ -32,17 +37,34 @@ inside of a module.
 See [Resource Paths](/menus/paths/) for more info on what type of input the 
 `<page path>` argument expects.
   
+#### Notes
+- The `[instance name]` argument allows you to set a unique name for the spawned 
+instance of that menu, the same name cannot be used more than once.
+  
+- The difference between `all-players` and `@a` is that `@a` will only show the 
+page to players online when the command is executed, while `all-players` will 
+show the page to all players, regardless of when players joined.
+
+- If the `<players>` argument only results in one player being shown the page, 
+then an `<x y z>` position doesn't have to be set, the page will, by default,
+spawn in front of the player.
+  
 #### Examples
 - `/delphi open @s ranksmenu`  
   Opens the ranks menu's main page for the player executing the command.  
   
-- `/delphi open @a bingotable:season/winter.xml`  
+- `/delphi open @a bingotable:season/winter.xml 134.5 70 -235.5`  
   Opens a page denoted by the file path `season/winter.xml` inside of the 
-  `bingotable` module.
+  `bingotable` module at `x=134.5 y=70 z=-235.5`
 
 - `/delphi open JulieWoolie ranksmenu:index.xml?tier=booster`  
   Opens the `index.xml` page for a player named `JulieWoolie` from the module 
-  `ranksmenu` and specifies a parameter `tier` with the value of `booster`
+  `ranksmenu` and specifies a parameter `tier` with the value of `booster`.
+
+- `/delphi open all-players scoreboard:explorer.xml 25.5 65 -25.5 90 0 global-scoreboard`  
+  Opens a page for all players at `x=25.5 y=65 z=-25.5` with rotation 
+  `yaw=90 pitch=0` and gives it the instance name `global-scoreboard`
+
 
 ## `/delphi close targeted`
 | | |
@@ -59,19 +81,28 @@ to see all open page views, use `/delphi debug toggle-outlines`
 ## `/delphi close all`
 | | |
 |--|--|
-| Arguments  | `/delphi close all [player]` |
+| Arguments  | `/delphi close all` |
 | Permission | `delphi.commands` |
   
 #### Description
-If no player name is set, closes all open pages. Otherwise, will only close the
-pages the specified player has open.
+Closes all open pages.
 
 #### Examples
-- `/delphi close all` or `/delphi close all @a`  
+- `/delphi close all`  
   Closes all pages open to all players.
+  
+## `/delphi close`
+| | |
+|--|--|
+| Arguments  | `/delphi close <instance name>` |
+| Permission | `delphi.commands` |
+  
+#### Description
+Closes an open page with the specified instance name.
 
-- `/delphi close all JulieWoolie`  
-  Closes all pages open to a player named "JulieWoolie"
+#### Examples
+- `/delphi close global-scoreboard`  
+  Closes the open page with the instance name `global-scoreboard`
 
 ## `/delphi list`
 | | |
@@ -112,11 +143,21 @@ page elements players are looking at.
 Debug outline state is global and once the command is ran, outlines are shown
 to all players with the `delphi.commands.debug` permission.
 
-## `/delphi debug dump-xml`
+## `/delphi debug dump-page-xml`
 | | |
 |--|--|
-| Arguments  | `/delphi debug dump-xml` |
+| Arguments  | `/delphi debug dump-page-xml` |
 | Permission | `delphi.commands.debug` |
 #### Description
 Dumps all rendering information available about the page the command executor 
-is looking at and writes it to `plugins/Delphi/debug/target-view-dump.xml`
+is looking at and writes it to `plugins/Delphi/debug/page-dump.xml`
+
+## `/delphi debug dump-targeted-element-xml`
+| | |
+|--|--|
+| Arguments  | `/delphi debug dump-targeted-element-xml` |
+| Permission | `delphi.commands.debug` |
+#### Description
+Dumps all rendering information about the element the command executor is 
+currently looking at at and writes it to 
+`plugins/Delphi/debug/target-element-dump.xml`

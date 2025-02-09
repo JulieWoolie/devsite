@@ -7,10 +7,11 @@ description: "An intractable button element."
 ## Attributes
 | Attribute | Value | Description | Example |
 |--|--|--|--|
-|`action` | *string* | Action for the button to perform when clicked | `action="cmd: tp %player% 0 100 0"` |
+| `action` | *string* | Action for the button to perform when clicked | `action="cmd: tp %player% 0 100 0"` |
+| `action-trigger` | *string* | Specifies whether left or right clicking<br>triggers the `action` attribute.<br>`"right"` by default. | `action-trigger="left"` |
 
 ### Action attribute
-Allows changing the button element to perform an action when clicked.
+Makes the button element to perform an action when clicked.
 
 | Action | Description | Example |
 |--|--|--|
@@ -21,14 +22,14 @@ Allows changing the button element to perform an action when clicked.
 ## Default Styling
 ```scss
 button {
-  $button-bg: darken(gray, 20%);
+  $button-bg: #096cfe;
 
   display: inline;
   color: white;
   background-color: $button-bg;
-  border-color: black;
-  padding: 1px;
-  border: 1px;
+  border-color: #121212;
+  padding: 0.5px;
+  border: 0.5px;
 
   &:hover {
     background-color: lighten($button-bg, 20%);
