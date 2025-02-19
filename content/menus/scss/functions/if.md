@@ -1,5 +1,5 @@
 ---
-title: "if($condition, if-true, if-false)"
+title: "if(condition, if-true, if-false)"
 type: docs
 description: "Ternary function"
 ---

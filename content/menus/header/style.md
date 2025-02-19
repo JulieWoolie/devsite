@@ -28,3 +28,6 @@ write SCSS inside of the style element.
   }
 </style>
 ```
+
+## See also
+- [SCSS in Delphi](/menus/scss)

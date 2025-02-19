@@ -104,28 +104,6 @@ Closes an open page with the specified instance name.
 - `/delphi close global-scoreboard`  
   Closes the open page with the instance name `global-scoreboard`
 
-## `/delphi list`
-| | |
-|--|--|
-| Arguments  | `/delphi list [player]` |
-| Permission | `delphi.commands` |
-  
-#### Description
-If no player name is set, lists players and how many open pages they have. 
-Otherwise, lists the ID and path of every page a player has open, along with
-convenient teleport and close buttons to either teleport to the open page or
-to close it respectively.
-
-#### Examples
-- `/delphi list @s`  
-  Shows all pages open to the player executing the
-
-- `/delphi list JulieWoolie`  
-  Shows all pages open to a player named "JulieWoolie"
-
-- `/delphi list`  
-  Shows all open pages.
-
 ## `/delphi debug toggle-outlines`
 | | |
 |--|--|

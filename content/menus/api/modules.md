@@ -238,7 +238,7 @@ Player player = // ...
 
 Delphi delphi = DelphiProvider.get();
 
-delphi.newRequest()
+delphi.newViewBuilder()
     .setPath(pagePath)
     .setPlayer(player)
     .openOrLog();
@@ -260,7 +260,7 @@ Location location = new Location(player.getWorld(), 100, 100, 100, 0, 0);
 
 Delphi delphi = DelphiProvider.get();
 
-delphi.newRequest()
+delphi.newViewBuilder()
     .setPath(pagePath)
     .setPlayer(player)
     .setSpawnLocation(location)

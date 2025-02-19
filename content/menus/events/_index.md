@@ -5,7 +5,6 @@ description: "Events allow you to listen to changes in the DOM and page with eve
 weight: 95
 ---
 
-## Event Types
 | Event Type | Triggers | Type |
 |--|--|--|
 | `mouse-enter` | Player's cursor enters an element | MouseEvent |

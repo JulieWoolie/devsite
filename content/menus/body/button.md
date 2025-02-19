@@ -8,7 +8,8 @@ description: "An intractable button element."
 | Attribute | Value | Description | Example |
 |--|--|--|--|
 | `action` | *string* | Action for the button to perform when clicked | `action="cmd: tp %player% 0 100 0"` |
-| `action-trigger` | *string* | Specifies whether left or right clicking<br>triggers the `action` attribute.<br>`"right"` by default. | `action-trigger="left"` |
+| `action-trigger` | *string* | Specifies whether left or right clicking<br>triggers the `action` attribute.<br>`"left"` by default. | `action-trigger="right"` |
+| `enabled` | *boolean* | Disables / enables the button | `enabled="false"` |
 
 ### Action attribute
 Makes the button element to perform an action when clicked.
@@ -18,6 +19,13 @@ Makes the button element to perform an action when clicked.
 | `close` | Closes the menu | `close` |
 | `cmd: <command>` | Executes a command as console.<br>You can use `%player%` as a placeholder for the player's name | `cmd: kill %player%` |
 | `player-cmd: <command>` | Executes a command as the player.<br>You can use `%player%` as a placeholder for the player's name | `player-cmd: balance` |
+
+Action triggers:
+| Value | Triggers |
+|--|--|
+| `left` | When the button is left-clicked (Punched) |
+| `right` | When the button is right-clicked (Interacted with) |
+
 
 ## Default Styling
 ```scss
@@ -49,4 +57,7 @@ button {
 ```
 ```xml
 <button action="cmd: kill %player%">Kill Self</button>
+```
+```xml
+<button enabled="false" action="cmd: give %player% pumpkin_pie 64">Get some pumpkin pies :)</button>
 ```
