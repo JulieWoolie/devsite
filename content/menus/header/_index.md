@@ -5,7 +5,7 @@ description: "Document `<head>` element"
 weight: 50
 ---
 
-The `<header>` tag is where metadata is declared and styles/scripts are linked.
+The `<head>` tag is where metadata is declared and styles/scripts are linked.
 
 ## Examples
 Header with options, screen size and style linked:

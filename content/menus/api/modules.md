@@ -161,14 +161,14 @@ and tells the player how many times its been clicked.
   
 First let's make the page's XML. We'll call it `clicker-page/index.xml`:
 ```xml
-<page>
-  <header></header>
+<delphi>
+  <head></head>
 
   <body>
     <!-- Give the button an ID, so we can reference it easily later -->
     <button id="clicker">Click me!</button>
   </body>
-</page>
+</delphi>
 ```
 Then we'll write a java class to handle the button logic:
 ```java
@@ -209,11 +209,11 @@ public class ClickerPage {
 }
 ```
 To tell the page to load the java class, we'll go back to the XML file and change
-the `<header>` element to this:
+the `<head>` element to this:
 ```xml
-<header>
+<head>
   <java-object class-name="net.arcadiusmc.example.ClickerPage"/>
-</header>
+</head>
 ```
 
 And finally we register the page module
