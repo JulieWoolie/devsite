@@ -18,7 +18,7 @@ If you're interested in the development of this plugin, checkout my site:
 - Support for tooltips
 
 ## Download
-{{<download href="/downloads/delphi-papermc-1.21.4-1.0.0-all.jar" filename="delphi-papermc-1.21.4-1.0.0-all.jar">}}
+Downloads are available on the [Hangar Page](https://hangar.papermc.io/JulieWoolie/delphi)
 
 ## Maven and gradle dependencies
 ### Gradle
@@ -28,7 +28,7 @@ repositories {
 }
 
 dependencies {
-  compileOnly("net.arcadiusmc:delphi:1.0.0")
+  compileOnly("net.arcadiusmc:delphi:0.1.1-SNAPSHOT")
 }
 ```
 ### Maven
@@ -45,7 +45,7 @@ dependencies {
   <dependency>
     <groupId>net.arcadiusmc</groupId>
     <artifactId>delphi</artifactId>
-    <version>1.0.0</version>
+    <version>0.1.1-SNAPSHOT</version>
   </dependency>
 </dependencies>
 ```
