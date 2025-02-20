@@ -128,14 +128,14 @@ inside the Delphi plugin&rsquo;s <code>modules</code> folder. This is done with
 </span></span><span style=display:flex><span>  }
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h2 id=loading-a-page-from-plugin-resources-and-invoking-java-objects-from-it>Loading a page from plugin resources and invoking java objects from it</h2><p>We&rsquo;ll create a page with a simple button that counts up each time you press it
-and tells the player how many times its been clicked.</p><p>First let&rsquo;s make the page&rsquo;s XML. We&rsquo;ll call it <code>clicker-page/index.xml</code>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-xml data-lang=xml><span style=display:flex><span><span style=color:#f92672>&lt;page&gt;</span>
-</span></span><span style=display:flex><span>  <span style=color:#f92672>&lt;header&gt;&lt;/header&gt;</span>
+and tells the player how many times its been clicked.</p><p>First let&rsquo;s make the page&rsquo;s XML. We&rsquo;ll call it <code>clicker-page/index.xml</code>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-xml data-lang=xml><span style=display:flex><span><span style=color:#f92672>&lt;delphi&gt;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>&lt;head&gt;&lt;/head&gt;</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>  <span style=color:#f92672>&lt;body&gt;</span>
 </span></span><span style=display:flex><span>    <span style=color:#75715e>&lt;!-- Give the button an ID, so we can reference it easily later --&gt;</span>
 </span></span><span style=display:flex><span>    <span style=color:#f92672>&lt;button</span> <span style=color:#a6e22e>id=</span><span style=color:#e6db74>&#34;clicker&#34;</span><span style=color:#f92672>&gt;</span>Click me!<span style=color:#f92672>&lt;/button&gt;</span>
 </span></span><span style=display:flex><span>  <span style=color:#f92672>&lt;/body&gt;</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&lt;/page&gt;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>&lt;/delphi&gt;</span>
 </span></span></code></pre></div><p>Then we&rsquo;ll write a java class to handle the button logic:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#f92672>package</span> net.arcadiusmc.example;
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#f92672>import</span> net.arcadiusmc.dom.*;
@@ -172,9 +172,9 @@ and tells the player how many times its been clicked.</p><p>First let&rsquo;s ma
 </span></span><span style=display:flex><span>  }
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>To tell the page to load the java class, we&rsquo;ll go back to the XML file and change
-the <code>&lt;header></code> element to this:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-xml data-lang=xml><span style=display:flex><span><span style=color:#f92672>&lt;header&gt;</span>
+the <code>&lt;head></code> element to this:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-xml data-lang=xml><span style=display:flex><span><span style=color:#f92672>&lt;head&gt;</span>
 </span></span><span style=display:flex><span>  <span style=color:#f92672>&lt;java-object</span> <span style=color:#a6e22e>class-name=</span><span style=color:#e6db74>&#34;net.arcadiusmc.example.ClickerPage&#34;</span><span style=color:#f92672>/&gt;</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>&lt;/header&gt;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>&lt;/head&gt;</span>
 </span></span></code></pre></div><p>And finally we register the page module</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>ExamplePlugin</span> <span style=color:#66d9ef>extends</span> JavaPlugin {
 </span></span><span style=display:flex><span>  <span style=color:#a6e22e>@Override</span>
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>onEnable</span>() {
