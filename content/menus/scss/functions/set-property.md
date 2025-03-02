@@ -1,5 +1,5 @@
 ---
-title: "set-property(property-name, value, important)"
+title: "set-property(name, value, important)"
 type: docs
 description: "Get the value of a CSS property"
 ---
@@ -43,3 +43,7 @@ explicitly been set previously.
 
 @debug set-property("margin", 2px 3px 4px 5px); // Error! Invalid call context
 ```
+
+
+## See Also
+- [get-property(property-name)](/menus/scss/functions/get-property)
