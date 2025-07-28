@@ -24,11 +24,11 @@ Downloads are available on the [Hangar Page](https://hangar.papermc.io/JulieWool
 ### Gradle
 ```kotlin
 repositories {
-  maven("https://libraries.arcadiusmc.net")
+  maven("https://libraries.juliewoolie.com")
 }
 
 dependencies {
-  compileOnly("net.arcadiusmc:delphi:0.1.1-SNAPSHOT")
+  compileOnly("com.juliewoolie:delphi:0.4.0-SNAPSHOT")
 }
 ```
 ### Maven
@@ -37,15 +37,15 @@ dependencies {
   <repository>
     <id>ArcadiusRepo</id>
     <name>ArcadiusRepo</name>
-    <url>https://libraries.arcadiusmc.net</url>
+    <url>https://libraries.juliewoolie.com</url>
   </repository>
 </repositories>
 
 <dependencies>
   <dependency>
-    <groupId>net.arcadiusmc</groupId>
+    <groupId>com.juliewoolie</groupId>
     <artifactId>delphi</artifactId>
-    <version>0.1.1-SNAPSHOT</version>
+    <version>0.4.0-SNAPSHOT</version>
   </dependency>
 </dependencies>
 ```

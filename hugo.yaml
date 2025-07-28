@@ -1,4 +1,4 @@
-title: "Arcadius Docs"
+title: "juliewoolie Docs"
 languageCode: "en-us"
 
 assetDir: "static"
@@ -17,13 +17,6 @@ menu:
   main:
     - name: Delphi Menus
       url: /menus/
-    - name: Grenadier Commands
-      url: /grenadier/
-    - name: NBT
-      url: /nbt/
-    #- name: Hephaestus JS
-    #  url: /scripts/
-
 module:
   hugoVersion:
     extended: true

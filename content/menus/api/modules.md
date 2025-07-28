@@ -23,9 +23,9 @@ information on how to get started with the API)
   
 Basic, template, example of how to create and register a module:
 ```java
-import net.arcadiusmc.delphi.*;
-import net.arcadiusmc.delphi.resource.*;
-import net.arcadiusmc.delphi.util.*;
+import com.juliewoolie.delphi.*;
+import com.juliewoolie.delphi.resource.*;
+import com.juliewoolie.delphi.util.*;
 
 public class Example extends JavaPlugin {
   @Override
@@ -63,9 +63,9 @@ following resources in our plugin's jar:
 and we want the `/page-data` directory to be a module that pages can be loaded
 from, we can do like this:
 ```java
-import net.arcadiusmc.delphi.*;
-import net.arcadiusmc.delphi.resource.*;
-import net.arcadiusmc.delphi.util.*;
+import com.juliewoolie.delphi.*;
+import com.juliewoolie.delphi.resource.*;
+import com.juliewoolie.delphi.util.*;
 
 public class Example extends JavaPlugin {
   @Override
@@ -97,9 +97,9 @@ inside the Delphi plugin's `modules` folder. This is done with
   
 Directory example:
 ```java
-import net.arcadiusmc.delphi.*;
-import net.arcadiusmc.delphi.resource.*;
-import net.arcadiusmc.delphi.util.*;
+import com.juliewoolie.delphi.*;
+import com.juliewoolie.delphi.resource.*;
+import com.juliewoolie.delphi.util.*;
 
 public class Example extends JavaPlugin {
   @Override
@@ -116,9 +116,9 @@ public class Example extends JavaPlugin {
 ```
 Zip module example:
 ```java
-import net.arcadiusmc.delphi.*;
-import net.arcadiusmc.delphi.resource.*;
-import net.arcadiusmc.delphi.util.*;
+import com.juliewoolie.delphi.*;
+import com.juliewoolie.delphi.resource.*;
+import com.juliewoolie.delphi.util.*;
 
 public class Example extends JavaPlugin {
   @Override
@@ -172,10 +172,10 @@ First let's make the page's XML. We'll call it `clicker-page/index.xml`:
 ```
 Then we'll write a java class to handle the button logic:
 ```java
-package net.arcadiusmc.example;
+package com.juliewoolie.example;
 
-import net.arcadiusmc.dom.*;
-import net.arcadiusmc.dom.event.*;
+import com.juliewoolie.dom.*;
+import com.juliewoolie.dom.event.*;
 
 public class ClickerPage {
   // This is the entry point called by the Document
@@ -212,7 +212,7 @@ To tell the page to load the java class, we'll go back to the XML file and chang
 the `<head>` element to this:
 ```xml
 <head>
-  <java-object class-name="net.arcadiusmc.example.ClickerPage"/>
+  <java-object class-name="com.juliewoolie.example.ClickerPage"/>
 </head>
 ```
 
