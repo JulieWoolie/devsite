@@ -5,9 +5,6 @@ description: "Allows for user input"
 ---
 
 Input elements take input from players
-  
-The displayed item can be set with either the `src` attribute or by writing the
-item data JSON inside the element.
 
 ## Attributes
 | Attribute | Value | Description | Example |
