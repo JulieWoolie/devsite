@@ -11,14 +11,17 @@ If you're interested in the development of this plugin, checkout my site:
 [juliewoolie.com/delphi](https://juliewoolie.com/delphi)
 
 ## Features
-- Highly customizable floating menus
-- Extensive Java API
-- (partial) SCSS support 
-- XML loaded menus
-- Support for tooltips
+* Ability to create HTML-like menus with XML and CSS (With limited native SCSS integration)
+* Full support for CSS selectors (Including pseudo elements like `:hover` and `:active`)
+* Fully documented Java API and JavaScript integration for easy scripting
+* Contuing development and new features being added all the time.
+* Extensive documentation (at [dev.juliewoolie.com](https://dev.juliewoolie.com))
+* Fully documented Java API (at [dev.juliewoolie.com/menus/javadoc](/menus/javadoc))
+* Devtools to help you create menus and fix issues.
+* All Delphi commands can be used in the `/execute` command and by datapack functions!
 
 ## Download
-Downloads are available on the [Hangar Page](https://hangar.papermc.io/JulieWoolie/delphi)
+Downloads are available on the <a href="https://modrinth.com/plugin/delphi" target="_blank">Modrinth Page</a> and <a href="https://hangar.papermc.io/JulieWoolie/delphi" target="_blank">Hangar Page</a>
 
 ## Maven and gradle dependencies
 ### Gradle
@@ -28,15 +31,15 @@ repositories {
 }
 
 dependencies {
-  compileOnly("com.juliewoolie:delphi:0.4.0-SNAPSHOT")
+  compileOnly("com.juliewoolie:delphi:0.4.3-SNAPSHOT")
 }
 ```
 ### Maven
 ```xml
 <repositories>
   <repository>
-    <id>ArcadiusRepo</id>
-    <name>ArcadiusRepo</name>
+    <id>DelphiRepo</id>
+    <name>DelphiRepo</name>
     <url>https://libraries.juliewoolie.com</url>
   </repository>
 </repositories>
@@ -45,7 +48,7 @@ dependencies {
   <dependency>
     <groupId>com.juliewoolie</groupId>
     <artifactId>delphi</artifactId>
-    <version>0.4.0-SNAPSHOT</version>
+    <version>0.4.3-SNAPSHOT</version>
   </dependency>
 </dependencies>
 ```
