@@ -104,6 +104,30 @@ Closes an open page with the specified instance name.
 - `/delphi close global-scoreboard`  
   Closes the open page with the instance name `global-scoreboard`
 
+## `/delphi devtools`
+| | |
+|--|--|
+| Permission | `delphi.commands` |
+
+#### Full list of Arguments
+- `/delphi devtools`
+- `/delphi devtools <instance name>`
+
+#### Description
+Opens Delphi's devtools. If an `<instance name>` is specified, the devtools are
+opened next to the specified menu, otherwise, devtools opens for the menu you
+are currently looking at.
+
+Devtools are only visible to the player that opened it.
+
+#### Examples
+- `/delphi devtools`  
+  Opens devtools for the menu you're looking at
+
+- `/delphi devtools delphi-page-0`  
+  Opens devtools for a menu with instance name `delphi-page-0`
+
+
 ## `/delphi debug toggle-outlines`
 | | |
 |--|--|
