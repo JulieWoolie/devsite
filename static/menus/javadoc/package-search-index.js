@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.juliewoolie.delphi"},{"l":"com.juliewoolie.delphi.event"},{"l":"com.juliewoolie.delphi.resource"},{"l":"com.juliewoolie.delphi.util"},{"l":"com.juliewoolie.dom"},{"l":"com.juliewoolie.dom.event"},{"l":"com.juliewoolie.dom.style"}];updateSearchResults();
