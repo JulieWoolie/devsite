@@ -31,7 +31,7 @@ repositories {
 }
 
 dependencies {
-  compileOnly("com.juliewoolie:delphi:0.4.3-SNAPSHOT")
+  compileOnly("com.juliewoolie:delphi:0.5.0-SNAPSHOT")
 }
 ```
 ### Maven
@@ -48,7 +48,7 @@ dependencies {
   <dependency>
     <groupId>com.juliewoolie</groupId>
     <artifactId>delphi</artifactId>
-    <version>0.4.3-SNAPSHOT</version>
+    <version>0.5.0-SNAPSHOT</version>
   </dependency>
 </dependencies>
 ```
