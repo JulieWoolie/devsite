@@ -73,6 +73,6 @@ If only the `intervalTicks` argument is not specified, it takes the same value a
 Function returns the task ID number, which can be passed to `clearInterval(taskId: number)` to 
 cancel the task before or during execution.
 
-### `clearTimeout(taskId: number): void` and `clearInterval(taskId: number): void`
+#### `clearTimeout(taskId: number): void` and `clearInterval(taskId: number): void`
 Both functions are identical, passing either an ID returned from either `setInterval` or 
 `setTimeout` will cancel the specified task.

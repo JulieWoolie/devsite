@@ -16,7 +16,7 @@ If you're interested in the development of this plugin, checkout my site:
 * Fully documented Java API and JavaScript integration for easy scripting
 * Contuing development and new features being added all the time.
 * Extensive documentation (at [dev.juliewoolie.com](https://dev.juliewoolie.com))
-* Fully documented Java API (at [dev.juliewoolie.com/menus/javadoc](/menus/javadoc))
+* Fully documented Java API (at [dev.juliewoolie.com/menus/javadoc](/menus/javadoc/0.4.3/))
 * Devtools to help you create menus and fix issues.
 * All Delphi commands can be used in the `/execute` command and by datapack functions!
 
