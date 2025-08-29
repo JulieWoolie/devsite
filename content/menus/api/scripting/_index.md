@@ -37,7 +37,7 @@ Execute a command as console, all specified arguments are joined with a single `
 Get a player or players, if multiple arguments are given.
 
 #### `sendMessage(player: Player, ...messages: any[]): void`
-Sends a message to a player, all arguments are converted to [Components]() 
+Sends a message to a player, all arguments are converted to [Components](https://jd.advntr.dev/api/4.24.0/net/kyori/adventure/text/Component.html) 
 and then concatenated together.
 
 #### `sendActionBar(player: Player, ... messages: any[]): void`
@@ -47,12 +47,12 @@ actionbar instead of the player's chat.
 ### Color functions
 
 #### `hsv(hue: number, sat: number, val: number, a: number = 1.0): Color`
-Creates a [Color](/menus/javadoc/0.4.3/com/juliewoolie/dom/style/Color.html) instance 
+Creates a [Color](/menus/javadoc/0.6.0/com/juliewoolie/dom/style/Color.html) instance 
 from the specified hue, saturation and value components. All arguments should be in 
 range `0..1`. Alpha, or `a` is an optional argument, if not specified, defaults to `1.0`
 
 #### `rgb(red: number, green: number, blue: number, alpha: number = 255): Color`
-Creates a [Color](/menus/javadoc/0.4.3/com/juliewoolie/dom/style/Color.html) instance 
+Creates a [Color](/menus/javadoc/0.6.0/com/juliewoolie/dom/style/Color.html) instance 
 from the specified red, green and blue components. Alpha is an optional argument, 
 if not specified defaults to `255`.
 
