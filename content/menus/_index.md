@@ -68,7 +68,7 @@ If you're writing a PaperMC plugin, also add this to your `paper-plugin.yml`:
 dependencies:
   server:
     Delphi:
-      load: AFTER
+      load: BEFORE
       required: true
       join-classpath: true
 ```
