@@ -13,7 +13,7 @@ Sets the color of an element's border
 
 ## Values
 Accepts any expression or value that resolves to a color value.  
-See [SCSS / Colors](/menus/scss/colors) for more info
+See [SCSS / Colors](/menus/scss/color) for more info
 
 ## Examples
 ```scss
