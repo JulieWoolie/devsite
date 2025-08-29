@@ -12,8 +12,10 @@ If you're interested in the development of this plugin, checkout my site:
 
 ## Features
 * Ability to create HTML-like menus with XML and CSS (With limited native SCSS integration)
-* Full support for CSS selectors (Including pseudo elements like `:hover` and `:active`)
-* Fully documented Java API and JavaScript integration for easy scripting
+* Full support for CSS selectors (Including pseudo classes like `:hover` and `:active`)
+* Support for regular HTML rendering (With `display: inline`, `display: block`, etc)
+* Support for Flexbox rendering (With `display: flex`)
+* JavaScript integration for easy scripting.
 * Contuing development and new features being added all the time.
 * Extensive documentation (at [dev.juliewoolie.com](https://dev.juliewoolie.com))
 * Fully documented Java API (at [dev.juliewoolie.com/menus/javadoc/0.5.0](/menus/javadoc/0.5.0/))
