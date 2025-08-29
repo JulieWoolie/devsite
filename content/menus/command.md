@@ -104,6 +104,54 @@ Closes an open page with the specified instance name.
 - `/delphi close global-scoreboard`  
   Closes the open page with the instance name `global-scoreboard`
 
+## `/delphi players list`
+| | |
+|--|--|
+| Arguments  | `/delphi players list <instance name>` |
+| Permission | `delphi.commands.players` |
+
+#### Description
+Lists all players that can see a specified open page.
+
+#### Examples
+- `/delphi players list targeted`  
+  Lists all players that can see the view you're currently looking at.
+
+- `/delphi players list delphi-page-1`  
+  Lists all players that can see the view with instance name "delphi-page-1"
+
+## `/delphi players add`
+| | |
+|--|--|
+| Arguments  | `/delphi players add <instance name> <players>` |
+| Permission | `delphi.commands.players` |
+
+#### Description
+Add viewers to an open page.
+
+#### Examples
+- `/delphi players add delphi-page-0 @a`  
+  Adds all currently online players to an open page with instance name 
+  "delphi-page-0"
+
+- `/delphi players add targeted JulieWoolie`  
+  Adds a player named "JulieWoolie" to the open page you're currently lookign 
+  at.
+
+## `/delphi players remove`
+| | |
+|--|--|
+| Arguments  | `/delphi players remove <instance name> <players>` |
+| Permission | `delphi.commands.players` |
+
+#### Description
+Remove viewers from an open page.
+
+#### Examples
+- `/delphi players remove targeted JulieWoolie`  
+  Adds a player named "JulieWoolie" to the open page you're currently lookign 
+  at.
+
 ## `/delphi devtools`
 | | |
 |--|--|
