@@ -42,6 +42,3 @@ span {
   vertical-align: sub;
 }
 ```
-
-## See also
-- [flex-shrink](/menus/scss/properties/flex-shrink)
