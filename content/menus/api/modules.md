@@ -30,7 +30,7 @@ import com.juliewoolie.delphi.util.*;
 public class Example extends JavaPlugin {
   @Override
   public void onEnable() {
-    Delphi delphi = DelphiService.get();
+    Delphi delphi = DelphiProvider.get();
     delphi.getResources().registerModule("example-module", new ExampleModule());
   }
 }
@@ -70,7 +70,7 @@ import com.juliewoolie.delphi.util.*;
 public class Example extends JavaPlugin {
   @Override
   public void onEnable() {
-    Delphi delphi = DelphiService.get();
+    Delphi delphi = DelphiProvider.get();
 
     // We have to give the constructor a class loader that resources will be 
     // loaded from, as well as the name of the directory to load data from.
@@ -104,7 +104,7 @@ import com.juliewoolie.delphi.util.*;
 public class Example extends JavaPlugin {
   @Override
   public void onEnable() {
-    Delphi delphi = DelphiService.get();
+    Delphi delphi = DelphiProvider.get();
     DelphiResources resources = delphi.getResources();
 
     Path dirPath = getDataPath().resolve("menu-directory");
@@ -123,7 +123,7 @@ import com.juliewoolie.delphi.util.*;
 public class Example extends JavaPlugin {
   @Override
   public void onEnable() {
-    Delphi delphi = DelphiService.get();
+    Delphi delphi = DelphiProvider.get();
     DelphiResources resources = delphi.getResources();
 
     Path zipPath = getDataPath().resolve("zipfile.zip");
