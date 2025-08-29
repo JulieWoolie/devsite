@@ -30,7 +30,7 @@ information on how to get started with the API)</p><p>Basic, template, example o
 </span></span><span style=display:flex><span><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Example</span> <span style=color:#66d9ef>extends</span> JavaPlugin {
 </span></span><span style=display:flex><span>  <span style=color:#a6e22e>@Override</span>
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>onEnable</span>() {
-</span></span><span style=display:flex><span>    Delphi delphi <span style=color:#f92672>=</span> DelphiService.<span style=color:#a6e22e>get</span>();
+</span></span><span style=display:flex><span>    Delphi delphi <span style=color:#f92672>=</span> DelphiProvider.<span style=color:#a6e22e>get</span>();
 </span></span><span style=display:flex><span>    delphi.<span style=color:#a6e22e>getResources</span>().<span style=color:#a6e22e>registerModule</span>(<span style=color:#e6db74>&#34;example-module&#34;</span>, <span style=color:#66d9ef>new</span> ExampleModule());
 </span></span><span style=display:flex><span>  }
 </span></span><span style=display:flex><span>}
@@ -59,7 +59,7 @@ from, we can do like this:</p><div class=highlight><pre tabindex=0 style=color:#
 </span></span><span style=display:flex><span><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Example</span> <span style=color:#66d9ef>extends</span> JavaPlugin {
 </span></span><span style=display:flex><span>  <span style=color:#a6e22e>@Override</span>
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>onEnable</span>() {
-</span></span><span style=display:flex><span>    Delphi delphi <span style=color:#f92672>=</span> DelphiService.<span style=color:#a6e22e>get</span>();
+</span></span><span style=display:flex><span>    Delphi delphi <span style=color:#f92672>=</span> DelphiProvider.<span style=color:#a6e22e>get</span>();
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    <span style=color:#75715e>// We have to give the constructor a class loader that resources will be </span>
 </span></span><span style=display:flex><span>    <span style=color:#75715e>// loaded from, as well as the name of the directory to load data from.</span>
@@ -85,7 +85,7 @@ inside the Delphi plugin&rsquo;s <code>modules</code> folder. This is done with
 </span></span><span style=display:flex><span><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Example</span> <span style=color:#66d9ef>extends</span> JavaPlugin {
 </span></span><span style=display:flex><span>  <span style=color:#a6e22e>@Override</span>
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>onEnable</span>() {
-</span></span><span style=display:flex><span>    Delphi delphi <span style=color:#f92672>=</span> DelphiService.<span style=color:#a6e22e>get</span>();
+</span></span><span style=display:flex><span>    Delphi delphi <span style=color:#f92672>=</span> DelphiProvider.<span style=color:#a6e22e>get</span>();
 </span></span><span style=display:flex><span>    DelphiResources resources <span style=color:#f92672>=</span> delphi.<span style=color:#a6e22e>getResources</span>();
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    Path dirPath <span style=color:#f92672>=</span> getDataPath().<span style=color:#a6e22e>resolve</span>(<span style=color:#e6db74>&#34;menu-directory&#34;</span>);
@@ -101,7 +101,7 @@ inside the Delphi plugin&rsquo;s <code>modules</code> folder. This is done with
 </span></span><span style=display:flex><span><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Example</span> <span style=color:#66d9ef>extends</span> JavaPlugin {
 </span></span><span style=display:flex><span>  <span style=color:#a6e22e>@Override</span>
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>onEnable</span>() {
-</span></span><span style=display:flex><span>    Delphi delphi <span style=color:#f92672>=</span> DelphiService.<span style=color:#a6e22e>get</span>();
+</span></span><span style=display:flex><span>    Delphi delphi <span style=color:#f92672>=</span> DelphiProvider.<span style=color:#a6e22e>get</span>();
 </span></span><span style=display:flex><span>    DelphiResources resources <span style=color:#f92672>=</span> delphi.<span style=color:#a6e22e>getResources</span>();
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>    Path zipPath <span style=color:#f92672>=</span> getDataPath().<span style=color:#a6e22e>resolve</span>(<span style=color:#e6db74>&#34;zipfile.zip&#34;</span>);
