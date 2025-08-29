@@ -63,7 +63,7 @@ spawn in front of the player.
 
 - `/delphi open all-players scoreboard:explorer.xml 25.5 65 -25.5 90 0 global-scoreboard`  
   Opens a page for all players at `x=25.5 y=65 z=-25.5` with rotation 
-  `yaw=90 pitch=0` and gives it the instance name `global-scoreboard`
+  `yaw=90 pitch=0` and gives it the [instance name](/menus/concepts/#instance-names) `global-scoreboard`
 
 
 ## `/delphi close targeted`
@@ -98,11 +98,11 @@ Closes all open pages.
 | Permission | `delphi.commands` |
   
 #### Description
-Closes an open page with the specified instance name.
+Closes an open page with the specified [instance name](/menus/concepts/#instance-names).
 
 #### Examples
 - `/delphi close global-scoreboard`  
-  Closes the open page with the instance name `global-scoreboard`
+  Closes the open page with the [instance name](/menus/concepts/#instance-names) `global-scoreboard`
 
 ## `/delphi players list`
 | | |
@@ -118,7 +118,7 @@ Lists all players that can see a specified open page.
   Lists all players that can see the view you're currently looking at.
 
 - `/delphi players list delphi-page-1`  
-  Lists all players that can see the view with instance name "delphi-page-1"
+  Lists all players that can see the view with [instance name](/menus/concepts/#instance-names) "delphi-page-1"
 
 ## `/delphi players add`
 | | |
@@ -131,7 +131,7 @@ Add viewers to an open page.
 
 #### Examples
 - `/delphi players add delphi-page-0 @a`  
-  Adds all currently online players to an open page with instance name 
+  Adds all currently online players to an open page with [instance name](/menus/concepts/#instance-names) 
   "delphi-page-0"
 
 - `/delphi players add targeted JulieWoolie`  
@@ -173,7 +173,7 @@ Devtools are only visible to the player that opened it.
   Opens devtools for the menu you're looking at
 
 - `/delphi devtools delphi-page-0`  
-  Opens devtools for a menu with instance name `delphi-page-0`
+  Opens devtools for a menu with [instance name](/menus/concepts/#instance-names) `delphi-page-0`
 
 
 ## `/delphi debug toggle-outlines`
