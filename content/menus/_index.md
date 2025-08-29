@@ -18,7 +18,7 @@ If you're interested in the development of this plugin, checkout my site:
 * JavaScript integration for easy scripting.
 * Contuing development and new features being added all the time.
 * Extensive documentation (at [dev.juliewoolie.com](https://dev.juliewoolie.com))
-* Fully documented Java API (at [dev.juliewoolie.com/menus/javadoc/0.5.0](/menus/javadoc/0.5.0/))
+* Fully documented Java API (at [dev.juliewoolie.com/menus/javadoc/0.6.0](/menus/javadoc/0.6.0/))
 * Devtools to help you create menus and fix issues.
 * All Delphi commands can be used in the `/execute` command and by datapack functions!
 
@@ -33,7 +33,7 @@ repositories {
 }
 
 dependencies {
-  compileOnly("com.juliewoolie:delphi:0.5.0-SNAPSHOT")
+  compileOnly("com.juliewoolie:delphi:0.6.0-SNAPSHOT")
 }
 ```
 ### Maven
@@ -50,7 +50,7 @@ dependencies {
   <dependency>
     <groupId>com.juliewoolie</groupId>
     <artifactId>delphi</artifactId>
-    <version>0.5.0-SNAPSHOT</version>
+    <version>0.6.0-SNAPSHOT</version>
   </dependency>
 </dependencies>
 ```

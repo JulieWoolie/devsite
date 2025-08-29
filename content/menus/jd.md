@@ -6,11 +6,17 @@ weight: 10
 ---
 
 ## Current version
-<a href="/menus/javadoc/0.5.0/" target="_blank" class="btn btn-secondary">
-  Delphi Menu Plugin 0.5.0 (Latest)
+<a href="/menus/javadoc/0.6.0/" target="_blank" class="btn btn-secondary">
+  Delphi Menu Plugin 0.6.0 (Latest)
 </a>
 
 ## Past Versions
+<div class="mb-2">
+  <a href="/menus/javadoc/0.5.0/" target="_blank" class="btn btn-primary">
+    Delphi Menu Plugin 0.5.0
+  </a>
+</div>
+
 <div>
   <a href="/menus/javadoc/0.4.3/" target="_blank" class="btn btn-primary">
     Delphi Menu Plugin 0.4.3
