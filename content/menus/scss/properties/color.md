@@ -13,7 +13,7 @@ Sets the color of the text displayed on elements.
 
 ## Values
 Accepts any expression or value that resolves to a color value.  
-See [SCSS / Colors](/menus/scss/colors) for more info
+See [SCSS / Colors](/menus/scss/color) for more info
 
 ## Examples
 ```scss
